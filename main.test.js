@@ -2,6 +2,72 @@
  * YOUR CODE HERE *
  ******************/
 
+const addAll = function (arr) {
+  let total = 0;
+  
+  for (const sum of arr) {
+    total += sum
+}
+  return total;
+}
+
+const countSpaces = function (str) {
+  let count = 0 ;
+
+  for (const sum of str) {
+    if (sum === ' ') {
+      count++
+    }
+  }
+  return count
+}
+
+const countTrues = function (arr) {
+  let count = 0;
+
+  for (const total of arr) {
+    if (total === true) {
+      count++
+    }
+  }
+  return count;
+}
+
+const makeFriendly = function (str) {
+  let result = '';
+  for (const yell of str) {
+    let yelling = yell.replace('.', '!')
+    result = result + yelling;
+  }
+  return result
+}
+
+
+
+const cubeAll = function (arr) {
+  let result = [];
+
+  for (const cubed of arr) {
+    result.push(cubed ** 3)
+  }
+  return result
+}
+
+const addNoises = function (arr) {
+  let result = [];
+
+  for (noises of arr) {
+    if (noises.includes('Fido' && 'Maisie' && 'Rolph')) {
+      result = noises + ' says Woof!';
+    }  else if (noises.includes('Garfield' && 'Heathcliff')) {
+      result = noises + ' says Meow!'
+    } else {
+      result = noises + ' says Rowr!'
+    }
+  }
+  return result
+}
+
 
 
 
